@@ -885,7 +885,35 @@ body.light-mode section {
         margin-top: 25px !important;
     }
 }
-.section-buttons {
+/* MOBILE EXTRA GAP FIX */
+
+@media screen and (max-width: 768px) {
+
+    body section {
+        min-height: 0 !important;
+        height: auto !important;
+        padding: 40px 20px !important;
+        margin: 0 !important;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .experience,
+    .contact {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .section-buttons {
+        margin-top: 25px !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .section-buttons {
         position: static !important;
         height: auto !important;
         min-height: 0 !important;
@@ -904,3 +932,4 @@ body.light-mode section {
         height: auto !important;
         padding-top: 30px !important;
     }
+}
